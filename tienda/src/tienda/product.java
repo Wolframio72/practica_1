@@ -2,30 +2,31 @@ package tienda;
 
 public class product {
 	
-	private String nombre_producto;
-	private String localizacion;
-	private int unidades;
+	
+	private static String nombre_producto;
+	static String localizacion=	"Madrid";
+	
+	static int unidades=6;
 
 	public product(String nombre_producto, String localizacion, int unidades) {
-		this.nombre_producto=nombre_producto;
-		this.localizacion=localizacion;
-		this.unidades=unidades;
+		product.nombre_producto=nombre_producto;
+		product.localizacion= "Madrid";
+		product.unidades=6;
 	}
 	
 	
-	public String getNombre_producto() {
+	public static  String getNombre_producto() {
 		return nombre_producto;
 	}
-	public void setNombre_producto(String nombre_producto) {
-		this.nombre_producto = nombre_producto;
+	public static void setNombre_producto(String nombre_producto) {
+		product.nombre_producto = nombre_producto;
 	}
 
-	
 	public String getLocalizacion() {
 		return localizacion;
 	}
-	public void setLocalizacion(String localizacion) {
-		this.localizacion = localizacion;
+	public static void setLocalizacion(String localizacion) {
+		product.localizacion = localizacion;
 	}
 
 	
@@ -33,7 +34,7 @@ public class product {
 		return unidades;
 	}
 	public void setUnidades(int unidades) {
-		this.unidades = unidades;
+		product.unidades = unidades;
 	}
 
 	

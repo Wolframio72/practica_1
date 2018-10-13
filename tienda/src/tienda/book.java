@@ -2,14 +2,14 @@ package tienda;
 
 public class book extends product {
 
-	private String genero;
-	private String precio;
+	static String genero = "terror";
+	static int precio = 6;
 	
 	
-	public book(String nombre_producto, String localizacion, int unidades, String genero, String precio) {
+	public book(String nombre_producto, String localizacion, int unidades, String genero, int precio) {
 		super(nombre_producto, localizacion, unidades);
-		this.genero=genero;
-		this.precio=precio;
+		book.genero=genero;
+		book.precio=precio;
 	}
 
 	
@@ -17,15 +17,15 @@ public class book extends product {
 		return genero;
 	}
 	public void setGenero(String genero) {
-		this.genero = genero;
+		book.genero = genero;
 	}
 
 
-	public String getPrecio() {
+	public int getPrecio() {
 		return precio;
 	}
-	public void setPrecio(String precio) {
-		this.precio = precio;
+	public void setPrecio(int precio) {
+		book.precio = precio;
 	}
 
 
