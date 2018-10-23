@@ -1,5 +1,3 @@
-# README
-comit 1
 
 Para esta práctica, hemos creado una tienda virtual de libros, la cual tiene un menú principal por el que se pregunta por el usuario,
 las acciones que desea desarrollar. El menú principal lo he desarrollado con un switch que llama a las diferentes funciones,
