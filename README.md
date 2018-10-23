@@ -1,7 +1,23 @@
 # practica_1
 
-Para esta práctica, hemos creado una tienda virtual de libros, la cual tiene un menú principal por el que se pregunta por el usuario y las acciones que desea desarrollar. El menú principal lo he desarrollado con un switch que llama a las diferentes funciones, dichas funciones tienen el desarrollo de cada opción de nuestro menú.
-El programa se basa en la búsqueda y localización de los libros que deseemos. 
-En cuanto al funcionamiento, tengo dos clases las cuales heredan entre sí (book y product).
-Desde las funciones del menú principal como buscar, sacamos por pantalla datos de otras clases como nombres, precios etc. En todas las clases he empleado constructores y sus métodos setters y getters para su posterior uso en el main principal.
- 	
+For this practice, we have created a virtual store of books, which has a main menu that asks the user
+for the actions that you want to develop.
+the different classes that we can access are:
+
+-1 - book
+-2 - UserProduct
+-3 - dates
+-4 - product
+
+The main menu have developed you with a switch that calls different functions, these functions have the development of each option from our menu:
+
+-1 - introduction of personal data.
+-2 - search books.
+-3 - change euros to dollars and vice versa.
+-4 - buy books.
+-5 - exit.
+
+The program is based on the search and find the books you want.
+As for performance, I have two classes which inherit each other (book and product).
+From the main menu functions, as search, we get by screen data of other kinds like names, prices etc.
+In all of the classes I have used constructors and setters methods and getters for subsequent use in the main main.
