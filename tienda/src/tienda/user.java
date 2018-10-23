@@ -4,9 +4,13 @@ import java.util.Scanner;
 
 public class user {
 
-	    void datos() {
+	    private static final String getGenero = null;
+
+
+
+		void datos() {
 		System.out.println("\tintroduzca los datos requeridos");
-		Scanner name =new Scanner(System.in);
+		Scanner name = new Scanner(System.in);
 		String name1;
 		
 		Scanner email =new Scanner(System.in);
@@ -44,6 +48,7 @@ public class user {
 			System.out.println();
 
 			System.out.println("Desea ver los detalles del libro "+ nombre+ " pulse 1 para continuar");
+			System.out.println("si desea volver al menu pulse 2");
 			respuesta1=respuesta.nextInt();
 			
 			
@@ -52,7 +57,8 @@ public class user {
 				System.out.println("el libro se encuentra en :"+ product.localizacion);
 				System.out.println("quedan "+product.unidades+ " ejemplares del "+nombre);
 				System.out.println("el libro pertenece al genero de "+ book.genero);
-				System.out.println("el libro cuesta "+ book.precio+"€");
+				System.out.println( book.tiempo);
+
 				System.out.println();
 
 			}
@@ -103,9 +109,43 @@ public class user {
 	     }
 	    
 	     void comprar_libro() {
-		 	
+		 	 
+			 Scanner nombre1=new Scanner(System.in);
+	    	 String nombre;
+	    	 System.out.println("introduzca el nombre del libro que desea");
+	    	 nombre=nombre1.nextLine(); 
+			 
+	    	 
+			 Scanner genero1=new Scanner(System.in);
+			 String genero;
+	    	 System.out.println("introduzca el genero del libro");
+	    	 genero=genero1.nextLine();
+	    	
+	    	 System.out.println();
 
-				
+	    	 System.out.println("nombre del libro " + nombre);
+	    	 System.out.println("genero del libro " + genero);
+	    	 System.out.println("precio del libro "+ UserProduct.precio+"€");
+	    	 System.out.println("autor del libro: "  + UserProduct.autor);
+	    	 System.out.println("editorial:  "        + UserProduct.editorial);
+	    	 
+	    	 System.out.println();
+
+			 Scanner respuesta1=new Scanner(System.in);
+	    	 int respuesta;
+
+	    	 System.out.println("si desea comprar el libro pulse 1");
+	    	 System.out.println("si desea volver al menu pulse 2");
+	    	 respuesta=respuesta1.nextInt();
+	    	 if (respuesta==1) {
+		    	 System.out.println("gracias por su compra");
+		    	 System.out.println();
+
+	    	 }
+	    	
+	    	 
+
+
 	    	 
 	     }
 	     
@@ -157,6 +197,8 @@ public class user {
 				
 	}
 	}
+	
+	
 
 	
 }

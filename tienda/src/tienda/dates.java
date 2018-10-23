@@ -2,14 +2,15 @@ package tienda;
 
 public class dates {
 
-	private String mail;
-	private String user;
+	
+	static String mail;
+	static String name;
 	private String password;
 	
-	public dates(String mail, String user, String password) {
+	public dates(String mail, String name, String password) {
 	
 		this.mail = mail;
-		this.user = user;
+		this.name = name;
 		this.password = password;
 	}
 	
@@ -20,11 +21,11 @@ public class dates {
 	public void setMail(String mail) {
 		this.mail = mail;
 	}
-	public String getUser() {
-		return user;
+	public String getname() {
+		return name;
 	}
-	public void setUser(String user) {
-		this.user = user;
+	public void setname(String name) {
+		this.name = name;
 	}
 	public String getPassword() {
 		return password;

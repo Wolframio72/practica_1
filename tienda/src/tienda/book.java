@@ -3,13 +3,16 @@ package tienda;
 public class book extends product {
 
 	static String genero = "terror";
-	static int precio = 6;
+	static String tiempo = "si lo compra en menos de 12h el envio sera gratuito";
 	
 	
-	public book(String nombre_producto, String localizacion, int unidades, String genero, int precio) {
+	
+
+	public book(String nombre_producto, String localizacion, int unidades, String genero, String tiempo) {
 		super(nombre_producto, localizacion, unidades);
 		book.genero=genero;
-		book.precio=precio;
+		book.tiempo=tiempo;
+		
 	}
 
 	
@@ -20,18 +23,18 @@ public class book extends product {
 		book.genero = genero;
 	}
 
-
-	public int getPrecio() {
-		return precio;
-	}
-	public void setPrecio(int precio) {
-		book.precio = precio;
-	}
-
-
 	public static void main(String[] args) {
 		
 
 	}
 
+
+public static String getTiempo() {
+	return tiempo;
+}
+
+
+public static void setTiempo(String tiempo) {
+	book.tiempo = tiempo;
+}
 }

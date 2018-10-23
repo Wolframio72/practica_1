@@ -1,45 +1,39 @@
 package tienda;
 
 public class UserProduct {
-	String genero;
-	double precio=0;
-	String editorial;
-	String autor;
+	
+	static double precio=20;
+	static String editorial=("editoriales Velazquez");
+	static String autor = ("Pepe Villuela");
 
-	public UserProduct(String genero, double precio, String editorial, String autor) {
-		super();
-		this.genero = genero;
-		this.precio = precio;
-		this.editorial = editorial;
-		this.autor = autor;
+	public UserProduct( double precio, String editorial, String autor) {
+		
+		UserProduct.precio = precio;
+		UserProduct.editorial = editorial;
+		UserProduct.autor = autor;
 	}
 
-	public String getGenero() {
-		return genero;
-	}
-	public void setGenero(String genero) {
-		this.genero = genero;
-	}
+	
 
-	public double getPrecio() {
+	public static double getPrecio(int precio2) {
 		return precio;
 	}
-	public void setPrecio(double precio) {
-		this.precio = precio;
+	public static void setPrecio(double precio) {
+		UserProduct.precio = precio;
 	}
 	
-	public String getEditorial() {
+	public static String getEditorial(String editorial2) {
 		return editorial;
 	}
-	public void setEditorial(String editorial) {
-		this.editorial = editorial;
+	public static void setEditorial(String editorial) {
+		UserProduct.editorial = editorial;
 	}
 	
-	public String getAutor() {
+	public static String getAutor(String autor2) {
 		return autor;
 	}
-	public void setAutor(String autor) {
-		this.autor = autor;
+	public static void setAutor(String autor) {
+		UserProduct.autor = autor;
 	}
 	
 	public static void main(String[] args) {
