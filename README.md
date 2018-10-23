@@ -16,7 +16,7 @@ the different classes that we can access are:
 -4 - product
 
 
-The main menu have developed you with a switch that calls different functions, these functions have the development of each option from 
+The main menu have developed with a switch that calls different functions, these functions have developmented of each option from 
 
 our menu:
 
